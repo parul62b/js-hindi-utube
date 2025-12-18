@@ -1,3 +1,5 @@
+
+/*
 // object declare by singleton
 const tinderUser = new Object () //declare as singleton {}
 // const tinderUser = {}        //{}
@@ -37,3 +39,34 @@ console.log(Object.keys (tinderUser));                          //[ 'id', 'name'
 console.log(Object.values (tinderUser));                   //[ '123abc', 'Sammy', false ]
 console.log(Object.entries (tinderUser));                    //[ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));      //true
+
+*/
+
+
+
+const  course = {
+    coursename :"js in hindi",
+    price : "999",
+    courseInstructor:"hitesh"
+}
+
+//course.courseInstructor
+const {courseInstructor: instructor} = course
+// console.log(courseInstructor);          //hitesh
+console.log(instructor);            //hitesh
+
+
+// destructuring with nested objects
+{
+//"name": "hitesh",
+//"coursename": "js in hindi",
+//"price": "free"
+// }
+
+
+//arrays destructuring
+[
+{},
+{},
+{}
+]
