@@ -52,3 +52,4 @@ addTwoNum(5)    // declaring function before it definition gives error
 const addTwo = function (num){
     return num + 2
 }
+
