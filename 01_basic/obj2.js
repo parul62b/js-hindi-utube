@@ -57,16 +57,17 @@ console.log(instructor);            //hitesh
 
 
 // destructuring with nested objects
-{
+//{
 //"name": "hitesh",
 //"coursename": "js in hindi",
 //"price": "free"
 // }
 
-
+/*
 //arrays destructuring
 [
 {},
 {},
 {}
-]
+] 
+*/
