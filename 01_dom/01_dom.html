@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM learning</title>
+</head>
+<body>
+    <div class ="bg-black">
+        <h1 class="heading text-3xl font-bold underline text-white">
+       DOM Learning on chai and code
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  
+<script>
+
+// DOM = Document Object Model
+// It is a programming interface for HTML and XML documents
+
+// DOM represents the entire HTML document as a TREE structure
+// Each element in HTML becomes a NODE in the DOM tree
+
+// JavaScript uses DOM to:
+// - access HTML elements
+// - modify content
+// - change styles
+// - add or remove elements
+// - handle user events
+
+// Root of DOM tree is 'document'
+// document represents the whole webpage
+
+// Types of DOM nodes:
+// 1. Element nodes  -> <div>, <p>, <h1>
+// 2. Text nodes     -> text inside elements
+// 3. Attribute nodes -> class, id, src, href
+
+// Accessing elements using DOM methods
+// document.getElementById()        -> selects element by id
+// document.getElementsByClassName() -> selects elements by class
+// document.getElementsByTagName()   -> selects elements by tag
+// document.querySelector()          -> selects first matching element
+// document.querySelectorAll()       -> selects all matching elements
+
+// DOM allows dynamic changes without reloading the page
+
+// Example actions possible using DOM:
+// - Change text or HTML content
+// - Change CSS styles
+// - Add or remove elements
+// - React to user actions like click, input, submit
+
+// DOM makes web pages interactive and dynamic
+// It is a core concept in web development with JavaScript
+
+
+
+
+// DOM = Document Object Model
+// It allows JavaScript to interact with HTML elements
+
+// Example HTML:
+// <h1 id="title">Hello</h1>
+// <button id="btn">Click</button>
+
+// 'document' represents the whole HTML page
+// getElementById() is used to select an element by its id
+let heading = document.getElementById("title");
+
+// innerText changes only the text content
+heading.innerText = "Hello DOM";
+
+// style is used to change CSS using JavaScript
+heading.style.color = "blue";
+
+// Selecting button element
+let button = document.getElementById("btn");
+
+// addEventListener() attaches an event to an element
+button.addEventListener("click", function () {
+  
+  // This code runs when button is clicked
+  alert("Button clicked using DOM");
+});
+
+// Creating a new element using DOM
+let para = document.createElement("p");
+
+// Adding text inside new element
+para.innerText = "This paragraph is added dynamically";
+
+// Adding new element to the webpage
+document.body.appendChild(para);
+
+// Removing an element using DOM
+// para.remove();
+
+// DOM makes webpage dynamic without page reload
+</script>
+</body>
+</html>
